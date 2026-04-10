@@ -18,7 +18,7 @@ Many students lack access to structured engineering education and mentorship. Th
 ## FEATURES
 
 * Clean, responsive single-page layout
-* Sections for About, Team, Programs, Growth, Involvement, and Contact
+* Sections for About, Programs, Growth, Involvement, Events, Team, and Contact
 * Smooth scrolling navigation
 * Call-to-action buttons for engagement
 * Mobile-friendly design

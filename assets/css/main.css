@@ -202,12 +202,12 @@ html {
 body {
 	min-height: 100vh;
 	background-color: #08121f;
-	background-image: url("images/overlay.png"), linear-gradient(135deg, #010e22 0%, #021d47 18%, #093a6b 32%, #276a9b 45%, #80abdf 55%, #d69a86 65%, #f29479 72%, #e36d58 80%, #cb1b16 88%, #7f0b08 95%, #65010c 100%);
-	background-size: auto, 300% 300%;
+	background-image: url("images/overlay.png"), linear-gradient(-45deg, #010e22, #021d47, #093a6b, #276a9b, #80abdf, #d69a86, #f29479, #e36d58, #cb1b16, #7f0b08, #65010c);
+	background-size: auto, 400% 400%;
 	background-repeat: no-repeat, no-repeat;
 	background-position: center center, 0% 50%;
-	background-attachment: fixed, fixed;
-	animation: gradient-shift 25s linear infinite;
+	background-attachment: scroll, scroll;
+	animation: gradient-shift 20s ease infinite;
 	position: relative;
 }
 
@@ -4099,10 +4099,27 @@ header.major + p,
 #contact .contact-content .email {
 	text-align: center;
 	justify-content: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #contact .contact-content .email a {
 	display: inline-block;
+	text-align: center;
+}
+
+@media screen and (max-width: 736px) {
+	#contact .contact-content .email {
+		text-align: center !important;
+		justify-content: center !important;
+	}
+
+	#contact .contact-content .email a {
+		display: inline-block;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 480px) {

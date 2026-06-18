@@ -16,9 +16,6 @@ iframe,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -402,7 +399,7 @@ body,
 input,
 select,
 textarea {
-	font-family: 'Lora', Georgia, serif;
+	font-family: 'Figtree', sans-serif;
 	font-size: 17pt;
 	font-weight: 400;
 	line-height: 1.65;
@@ -469,6 +466,10 @@ p {
 	margin: 0 0 2em 0;
 }
 
+.desc {
+	text-align: center;
+}
+
 p.content {
 	-moz-columns: 20em 2;
 	-webkit-columns: 20em 2;
@@ -483,35 +484,32 @@ p.content {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 300;
+h3 
+{
+	font-weight: 500, bold;
 	line-height: 1.5;
 	margin: 0 0 0.7em 0;
 	letter-spacing: -0.025em;
 }
 
-h1,
+h1
+{
+	font-family: 'Fira Code', serif;
+
+}
 h2 {
-	font-family: 'Fira Code', monospace;
+	font-family: 'Jost', sans-serif;
 }
 
-h3,
-h4,
-h5,
-h6,
+h3
 .subtitle {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-family: 'Jost', sans-serif;
 }
 
 h1 a,
 h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
+h3 a
+{
 	color: inherit;
 	text-decoration: none;
 }
@@ -527,18 +525,6 @@ h2 {
 
 h3 {
 	font-size: 1.25em;
-}
-
-h4 {
-	font-size: 1.1em;
-}
-
-h5 {
-	font-size: 0.9em;
-}
-
-h6 {
-	font-size: 0.7em;
 }
 
 @media screen and (max-width: 736px) {
@@ -571,7 +557,7 @@ blockquote {
 code {
 	border-radius: 8px;
 	border: solid 1px;
-	font-family: "Courier New", monospace;
+	font-family: 'Fira Code', monospace;
 	font-size: 0.9em;
 	margin: 0 0.25em;
 	padding: 0.25em 0.65em;
@@ -579,7 +565,7 @@ code {
 
 pre {
 	-webkit-overflow-scrolling: touch;
-	font-family: "Courier New", monospace;
+	font-family: 'Fira Code', monospace;
 	font-size: 0.9em;
 	margin: 0 0 2em 0;
 }
@@ -630,10 +616,8 @@ b {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 
+{
 	color: #ffffff;
 }
 
@@ -2138,6 +2122,7 @@ button,
 	border: 0;
 	cursor: pointer;
 	display: inline-block;
+	font-family: 'Jost', sans-serif;
 	font-weight: 300;
 	height: 2.75em;
 	line-height: 2.75em;
@@ -2926,11 +2911,9 @@ body.is-preload #header.alt .logo {
 
 #nav h1,
 #nav h2,
-#nav h3,
-#nav h4,
-#nav h5,
-#nav h6 {
-	color: #636363;
+#nav h3
+{
+	color: #181753;
 }
 
 #nav blockquote {
@@ -3172,25 +3155,23 @@ body.scrolling-up #main {
 #main input,
 #main select,
 #main textarea {
-	color: #636363;
+	color: #0c1c38;
 }
 
 #main a:hover {
-	color: #636363;
+	color: #0c1c38;
 }
 
 #main strong,
 #main b {
-	color: #636363;
+	color: #0c1c38;
 }
 
 #main h1,
 #main h2,
-#main h3,
-#main h4,
-#main h5,
-#main h6 {
-	color: #636363;
+#main h3
+{
+	color: #0c1c38;
 }
 
 #main blockquote {
@@ -3364,7 +3345,7 @@ body.scrolling-up #main {
 
 #main .icon.alt {
 	border-color: #dddddd;
-	color: #636363;
+	color: #0c1c38;
 }
 
 #main .icon.alt:hover {
@@ -3380,7 +3361,7 @@ body.scrolling-up #main {
 }
 
 #main dl dt {
-	color: #636363;
+	color: #0c1c38;
 }
 
 #main header.major h2:after {
@@ -3400,7 +3381,7 @@ body.scrolling-up #main {
 }
 
 #main table th {
-	color: #636363;
+	color: #0c1c38;
 }
 
 #main table thead {
@@ -3715,8 +3696,8 @@ body.scrolling-up #main {
 
 #main h1,
 #main h2,
-#main h3,
-#main h4 {
+#main h3
+{
 	color: #0c1c38;
 	letter-spacing: -0.02em;
 }
@@ -4042,7 +4023,7 @@ header.major+p,
 #contact .contact-content .social-label {
 	margin: 1.5rem 0 0.75rem 0;
 	font-weight: 600;
-	color: #636363;
+	color: #0c1c38;
 }
 
 #contact .contact-content .social-links {

@@ -121,17 +121,31 @@
 						// Activate section.
 						$section.removeClass('inactive');
 
-						// No locked links? Deactivate all links and activate this section's one.
-						if ($nav_a.filter('.active-locked').length == 0) {
+						// Always deactivate all links first, then activate this section's one.
+						$nav_a.removeClass('active');
+						$this.addClass('active');
 
-							$nav_a.removeClass('active');
-							$this.addClass('active');
+						// If this link was locked, unlock it now.
+						if ($this.hasClass('active-locked'))
+							$this.removeClass('active-locked');
 
+						// Scroll the active nav link into view on mobile.
+						if (breakpoints.active('<=small')) {
+							var navUl = $nav.find('ul')[0];
+							if (navUl) {
+								$this[0].scrollIntoView({
+									behavior: 'smooth',
+									inline: 'center',
+									block: 'nearest'
+								});
+							}
 						}
 
-						// Otherwise, if this section's link is the one that's locked, unlock it.
-						else if ($this.hasClass('active-locked'))
-							$this.removeClass('active-locked');
+					},
+					leave: function () {
+
+						// Deactivate this section's link when leaving the section.
+						$this.removeClass('active');
 
 					}
 				});
